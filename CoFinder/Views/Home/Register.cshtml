@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="../css/style.css">
-
 </head>
 <body>
     <section class="ftco-section">
@@ -29,7 +28,7 @@
                         <div class="row no-gutters">
                             <div class="col-lg-6">
                                 <div class="contact-wrap w-100 p-md-5 p-4">
-                                    <h3>Company information registration</h3>
+                                    <h3>Company registration</h3>
                                     <p class="mb-4">We're open for any suggestion or just to have a chat</p>
                                     <div id="form-message-warning" class="mb-4"></div>
                                     <div id="form-message-success" class="mb-4">
@@ -39,38 +38,44 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                                    <form method="post" id="contactForm" name="contactForm" class="contactForm">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <input type="number" class="form-control" name="nationalcode" id="nationalcode" placeholder="Nationalcode Company">
+                                                    <input type="number" class="form-control" name="nationalcode" id="nationalcode" maxlength="11" placeholder="Nationalcode Company">
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <input type="date" class="form-control" name="DateofRegistration" id="DateofRegistration" placeholder="DateofRegistration">
                                                 </div>
-                                                <div class="col-md-12">
+                                                <div class="col-md-13">
                                                     <div class="form-group">
+                                                        <p class="question-title text-color ng-binding" ng-bind-html="replacePipedAnswers(question.title | linky:'_blank':{rel: 'nofollow'})">تاریخ تولد خود را وارد کنید.</p>
                                                         <input type="text" class="form-control" name="name" id="name" placeholder="Name">
                                                     </div>
                                                 </div>
-                                                <div class="col-md-12">
+                                                <div class="col-md-13">
                                                     <div class="form-group">
                                                         <input type="email" class="form-control" name="email" id="email" placeholder="Email">
                                                     </div>
                                                 </div>
-                                                <div class="col-md-12">
+                                                <div class="col-md-13">
                                                     <div class="form-group">
                                                         <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
                                                     </div>
                                                 </div>
-                                                <div class="col-md-12">
+                                                <div class="col-md-13">
                                                     <div class="form-group">
                                                         <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Create a message here"></textarea>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-12">
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <input type="reset" class="form-control" name="reset" id="reset" placeholder="ResetForm">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-13">
                                                     <div class="form-group">
                                                         <input type="submit" value="Send Message" class="btn btn-primary">
                                                         <div class="submitting"></div>
