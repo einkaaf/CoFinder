@@ -1,8 +1,15 @@
+using CoFinder.Repository;
+using CoFinder.Service;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 builder.Services.AddMvc();
+
+builder.Services.AddDbContext<AppDBContext>();
+builder.Services.AddScoped<CompanyRepo>();
+builder.Services.AddScoped<CompanyService>();
 
 
 var app = builder.Build();

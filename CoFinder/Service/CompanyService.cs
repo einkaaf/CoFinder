@@ -1,9 +1,17 @@
 ﻿using CoFinder.Models;
+using CoFinder.Repository;
 
 namespace CoFinder.Service
 {
     public class CompanyService
     {
+        private readonly CompanyRepo companyRepo;
+
+        public CompanyService(CompanyRepo companyRepo)
+        {
+            this.companyRepo = companyRepo;
+        }
+
         public void RegisterCompany(Comapny_VM comapny_VM)
         {
             Company company = new Company();
@@ -20,6 +28,18 @@ namespace CoFinder.Service
             company.CompanyType = comapny_VM.CompanyType;
 
             company.RegisterDate=DateTime.Now;
+
+            companyRepo.Insert(company);
+        }
+
+        public Company GetCompany(string nationalCode)
+        {
+            if (!string.IsNullOrEmpty(nationalCode))
+            {
+                Company result = companyRepo.GetCompanyByNationalCode(nationalCode);
+                return result;
+            }
+            else return null;
         }
     }
 }
