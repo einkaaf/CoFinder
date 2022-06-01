@@ -1,204 +1,247 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
-@{
     Layout = null;
 }
 
-
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
+<!DOCTYPE html>
+<html lang="fa" class="light-style layout-navbar-fixed layout-menu-fixed" dir="rtl" data-theme="theme-default" data-assets-path="../" data-template="vertical-menu-template">
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
-    <link rel="stylesheet" href="~/css/index/fonts/icomoon/style.css">
+    <title>جدول‌ها - جدول‌های پایه | فرست - قالب مدیریت بوت‌استرپ</title>
 
+    <meta name="description" content="">
 
-    <link rel="stylesheet" href="~/css/index/css/owl.carousel.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../img/favicon/favicon.ico">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="~/css/index/css/bootstrap.min.css">
-    
-    <!-- Style -->
-    <link rel="stylesheet" href="~/css/index/css/style.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="../vendor/fonts/boxicons.css">
+    <link rel="stylesheet" href="../vendor/fonts/fontawesome.css">
+    <link rel="stylesheet" href="../vendor/fonts/flag-icons.css">
 
-    <title>Table #8</title>
-  </head>
-  <body>
-  
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../vendor/css/rtl/core.css" class="template-customizer-core-css">
+    <link rel="stylesheet" href="../vendor/css/rtl/theme-default.css" class="template-customizer-theme-css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <link rel="stylesheet" href="../vendor/css/rtl/rtl.css">
 
-  <div class="content">
-    
-    <div class="container">
-      <h2 class="mb-5">Table #8</h2>
-      
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="../vendor/libs/typeahead-js/typeahead.css">
 
-      <div class="table-responsive custom-table-responsive">
+    <!-- Page CSS -->
+    <!-- Helpers -->
+    <script src="../vendor/js/helpers.js"></script>
 
-        <table class="table custom-table">
-          <thead>
-            <tr>  
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="../vendor/js/template-customizer.js"></script>
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
 
-              <th scope="col">
-                <label class="control control--checkbox">
-                  <input type="checkbox"  class="js-check-all"/>
-                  <div class="control__indicator"></div>
-                </label>
-              </th>
-              
-              <th scope="col">Order</th>
-              <th scope="col">Name</th>
-              <th scope="col">Occupation</th>
-              <th scope="col">Contact</th>
-              <th scope="col">Education</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr scope="row">
-              <th scope="row">
-                <label class="control control--checkbox">
-                  <input type="checkbox"/>
-                  <div class="control__indicator"></div>
-                </label>
-              </th>
-              <td>
-                1392
-              </td>
-              <td><a href="#">James Yates</a></td>
-              <td>
-                Web Designer
-                <small class="d-block">Far far away, behind the word mountains</small>
-              </td>
-              <td>+63 983 0962 971</td>
-              <td>NY University</td>
-            </tr>
-            <tr class="spacer"><td colspan="100"></td></tr>
-            <tr>
-              <th scope="row">
-                <label class="control control--checkbox">
-                  <input type="checkbox"/>
-                  <div class="control__indicator"></div>
-                </label>
-              </th>
-              
-              <td>4616</td>
-              <td><a href="#">Matthew Wasil</a></td>
-              <td>
-                Graphic Designer
-                <small class="d-block">Far far away, behind the word mountains</small>
-              </td>
-              <td>+02 020 3994 929</td>
-              <td>London College</td>
-            </tr>
-            <tr class="spacer"><td colspan="100"></td></tr>
-            <tr>
-              <th scope="row">
-                <label class="control control--checkbox">
-                  <input type="checkbox"/>
-                  <div class="control__indicator"></div>
-                </label>
-              </th>
-              
-              <td>9841</td>
-              <td><a href="#">Sampson Murphy</a></td>
-              <td>
-                Mobile Dev
-                <small class="d-block">Far far away, behind the word mountains</small>
-              </td>
-              <td>+01 352 1125 0192</td>
-              <td>Senior High</td>
-            </tr>
-            <tr class="spacer"><td colspan="100"></td></tr>
-            <tr>
-              <th scope="row">
-                <label class="control control--checkbox">
-                  <input type="checkbox"/>
-                  <div class="control__indicator"></div>
-                </label>
-              </th>
-              
-              <td>9548</td>
-              <td><a href="#">Gaspar Semenov</a></td>
-              <td>
-                Illustrator
-                <small class="d-block">Far far away, behind the word mountains</small>
-              </td>
-              <td>+92 020 3994 929</td>
-              <td>College</td>
-            </tr>
-            <tr class="spacer"><td colspan="100"></td></tr>
-            <tr>
-              <th scope="row">
-                <label class="control control--checkbox">
-                  <input type="checkbox"/>
-                  <div class="control__indicator"></div>
-                </label>
-              </th>
-              
-              <td>4616</td>
-              <td><a href="#">Matthew Wasil</a></td>
-              <td>
-                Graphic Designer
-                <small class="d-block">Far far away, behind the word mountains</small>
-              </td>
-              <td>+02 020 3994 929</td>
-              <td>London College</td>
-            </tr>
-            <tr class="spacer"><td colspan="100"></td></tr>
-            <tr>
-              <th scope="row">
-                <label class="control control--checkbox">
-                  <input type="checkbox"/>
-                  <div class="control__indicator"></div>
-                </label>
-              </th>
-              
-              <td>9841</td>
-              <td><a href="#">Sampson Murphy</a></td>
-              <td>
-                Mobile Dev
-                <small class="d-block">Far far away, behind the word mountains</small>
-              </td>
-              <td>+01 352 1125 0192</td>
-              <td>Senior High</td>
-            </tr>
-            <tr class="spacer"><td colspan="100"></td></tr>
-            <tr>
-              <th scope="row">
-                <label class="control control--checkbox">
-                  <input type="checkbox"/>
-                  <div class="control__indicator"></div>
-                </label>
-              </th>
-              
-              <td>9548</td>
-              <td><a href="#">Gaspar Semenov</a></td>
-              <td>
-                Illustrator
-                <small class="d-block">Far far away, behind the word mountains</small>
-              </td>
-              <td>+92 020 3994 929</td>
-              <td>College</td>
-            </tr>
-            
-          </tbody>
-        </table>
-      </div>
+</head>
 
+<body>
+    <!-- Layout wrapper -->
 
+    <div class="layout-container">
+        <!-- Layout container -->
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+                <h4 class="py-3 breadcrumb-wrapper mb-4">
+                    <span class="text-muted fw-light">شرکت ها /</span> جستجوی شرکت
+                </h4>
+                <small class="text-light mb-3 fw-semibold d-block">جستجو شرکت</small>
+                <div class="input-group input-group-merge">
+                    <span class="input-group-text" id="basic-addon-search31"><i class="bx bx-search"></i></span>
+                    <input type="text" class="form-control" placeholder="شناسه ملی و یا نام شرکت را وارد کنید" aria-label="Search..." aria-describedby="basic-addon-search31">
+                </div>
+                <hr class="my-5">
+                <div class="card">
+                    <h5 class="card-header">سطرهای راه راه</h5>
+                    <div class="table-responsive text-nowrap">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>پروژه</th>
+                                    <th>مشتری</th>
+                                    <th>کاربران</th>
+                                    <th>وضعیت</th>
+                                    <th>عمل‌ها</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-border-bottom-0">
+                                <tr>
+                                    <td><i class="align-middle fab fa-angular fa-lg text-danger me-3"></i> <strong>پروژه انگولار</strong></td>
+                                    <td>استیو جابز</td>
+                                    <td>
+                                        <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="تونی استارک">
+                                                <img src="../img/avatars/5.png" alt="Avatar" class="rounded-circle">
+                                            </li>
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="بیل گیتس">
+                                                <img src="../img/avatars/6.png" alt="Avatar" class="rounded-circle">
+                                            </li>
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="دیوید بکهام">
+                                                <img src="../img/avatars/7.png" alt="Avatar" class="rounded-circle">
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td><span class="badge bg-label-primary me-1">فعال</span></td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> ویرایش</a>
+                                                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> حذف</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><i class="align-middle fab fa-react fa-lg text-info me-3"></i> <strong>پروژه React</strong></td>
+                                    <td>بری الن</td>
+                                    <td>
+                                        <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="تونی استارک">
+                                                <img src="../img/avatars/5.png" alt="Avatar" class="rounded-circle">
+                                            </li>
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="بیل گیتس">
+                                                <img src="../img/avatars/6.png" alt="Avatar" class="rounded-circle">
+                                            </li>
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="دیوید بکهام">
+                                                <img src="../img/avatars/7.png" alt="Avatar" class="rounded-circle">
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td><span class="badge bg-label-success me-1">اتمام یافته</span></td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> ویرایش</a>
+                                                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> حذف</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><i class="align-middle fab fa-vuejs fa-lg text-success me-3"></i> <strong>پروژه VueJs</strong></td>
+                                    <td>تونی استارک</td>
+                                    <td>
+                                        <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="تونی استارک">
+                                                <img src="../img/avatars/5.png" alt="Avatar" class="rounded-circle">
+                                            </li>
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="بیل گیتس">
+                                                <img src="../img/avatars/6.png" alt="Avatar" class="rounded-circle">
+                                            </li>
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="دیوید بکهام">
+                                                <img src="../img/avatars/7.png" alt="Avatar" class="rounded-circle">
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td><span class="badge bg-label-info me-1">زمان‌بندی شده</span></td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> ویرایش</a>
+                                                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> حذف</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="align-middle fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>پروژه بوت‌استرپ</strong>
+                                    </td>
+                                    <td>بیل گیتس</td>
+                                    <td>
+                                        <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="تونی استارک">
+                                                <img src="../img/avatars/5.png" alt="Avatar" class="rounded-circle">
+                                            </li>
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="بیل گیتس">
+                                                <img src="../img/avatars/6.png" alt="Avatar" class="rounded-circle">
+                                            </li>
+                                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="دیوید بکهام">
+                                                <img src="../img/avatars/7.png" alt="Avatar" class="rounded-circle">
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td><span class="badge bg-label-warning me-1">در انتظار</span></td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> ویرایش</a>
+                                                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> حذف</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <!-- / Content -->
+            <!-- Footer -->
+            <footer class="content-footer footer bg-footer-theme">
+                <div class="container-fluid d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                    <div class="mb-2 mb-md-0">
+                        طراحی شده با ❤️ ارائه شده در وب‌سایت
+                        <a href="https://rtl-theme.com" target="_blank" class="footer-link fw-semibold">راست‌چین</a>
+                    </div>
+                    <div>
+                        <a href="https://rtl-theme.com" class="footer-link me-4" target="_blank">لایسنس</a>
+                        <a href="https://rtl-theme.com" target="_blank" class="footer-link me-4">قالب‌های بیشتر</a>
+
+                        <a href="https://v3dboy.ir/previews/html/frest/documentation" target="_blank" class="footer-link me-4">مستندات</a>
+
+                        <a href="https://rtl-theme.com" target="_blank" class="footer-link d-none d-sm-inline-block">پشتیبانی</a>
+                    </div>
+                </div>
+            </footer>
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+        </div>
+        <!-- Content wrapper -->
     </div>
+    <!-- / Layout page -->
+    <!-- / Layout wrapper -->
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="../vendor/libs/jquery/jquery.js"></script>
+    <script src="../vendor/libs/popper/popper.js"></script>
+    <script src="../vendor/js/bootstrap.js"></script>
+    <script src="../vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
-  </div>
-    
-    
+    <script src="../vendor/libs/hammer/hammer.js"></script>
 
-    <script src="~/css/index/js/jquery-3.3.1.min.js"></script>
-    <script src="~/css/index/js/popper.min.js"></script>
-    <script src="~/css/index/js/bootstrap.min.js"></script>
-    <script src="~/css/index/js/main.js"></script>
-  </body>
+    <script src="../vendor/libs/i18n/i18n.js"></script>
+    <script src="../vendor/libs/typeahead-js/typeahead.js"></script>
+
+    <script src="../vendor/js/menu.js"></script>
+    <!-- endbuild -->
+    <!-- Vendors JS -->
+    <!-- Main JS -->
+    <script src="../js/main.js"></script>
+
+    <!-- Page JS -->
+</body>
 </html>
