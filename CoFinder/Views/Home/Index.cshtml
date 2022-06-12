@@ -55,10 +55,13 @@
                     <span class="text-muted fw-light">شرکت ها /</span> جستجوی شرکت
                 </h4>
                 <small class="text-light mb-3 fw-semibold d-block">جستجو شرکت</small>
+            
                 <div class="input-group input-group-merge">
                     <span class="input-group-text" id="basic-addon-search31"><i class="bx bx-search"></i></span>
-                    <input type="text" class="form-control" placeholder="شناسه ملی را وارد کنید" aria-label="Search..." aria-describedby="basic-addon-search31">
+                    <input type="text" id="nationalCodeSearch" class="form-control" placeholder="شناسه ملی را وارد کنید" aria-label="Search..." aria-describedby="basic-addon-search31">
+                    <button onclick="SearchBTN()" class="btn btn-primary 1">جستجو</button>
                 </div>
+                       
                 <hr class="my-5">
                 <div class="card">
                     <h5 class="card-header">لیست شرکت های یافت شده</h5>
@@ -95,8 +98,7 @@
             <footer class="content-footer footer bg-footer-theme">
                 <div class="container-fluid d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
                     <div class="mb-2 mb-md-0">
-                       طراحی شده توسطکریمی
-                   
+                       طراحی شده توسط کریمی
                     </div>
                 
             </footer>
@@ -125,6 +127,7 @@
     <!-- Vendors JS -->
     <!-- Main JS -->
     <script src="../js/main.js"></script>
+    <script src="../js/admin.js"></script>
 
     <!-- Page JS -->
 </body>

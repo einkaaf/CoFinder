@@ -30,6 +30,13 @@ namespace CoFinder.Controllers
         {
             var result = companyService.GetAllCompany();
             return View(result);
+        } 
+
+        [HttpGet]
+        public IActionResult Index([FromQuery] string nationalCode)
+        {
+            var result = companyService.GetAllCompany();
+            return View(result);
         }
 
     }
