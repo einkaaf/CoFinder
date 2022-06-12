@@ -6,7 +6,6 @@
         public string Name { get; set; }
         public string RegisterNumber { get; set; }
         public string CompanyRegisterDate { get; set; }
-        public string EstablishmentDate { get; set; }
         public DateTime RegisterDate { get; set; }
         public string NationalCode { get; set; }
         public string Address { get; set; }

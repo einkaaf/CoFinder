@@ -19,7 +19,6 @@ namespace CoFinder.Service
             company.Name= comapny_VM.Name;
             company.RegisterNumber = comapny_VM.RegisterNumber;
             company.CompanyRegisterDate = comapny_VM.CompanyRegisterDate;
-            company.EstablishmentDate = comapny_VM.EstablishmentDate;
             company.NationalCode = comapny_VM.NationalCode;
             company.Address = comapny_VM.Address;
             company.Phone = comapny_VM.Phone;

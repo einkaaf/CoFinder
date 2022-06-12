@@ -59,25 +59,25 @@
                     <!-- Multi Column with Form Separator -->
                     <div class="card mb-4">
                         <h5 class="card-header">چند ستون با جداکننده فرم</h5>
-                        <form class="card-body">
+                        <form class="card-body" method="post">
                             <h6 class="fw-normal">1. اطلاعات پایه</h6>
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <label class="form-label" for="multicol-username">نام شرکت</label>
-                                    <input type="text" id="multicol-username" class="form-control text-start" dir="ltr" placeholder="شرکت پایانه های داده ای نوین">
+                                    <input type="text" id="multicol-username" name="Name" class="form-control text-start" dir="ltr" placeholder="شرکت پایانه های داده ای نوین">
                                 </div>
                                 <div class="col-md-6">
                                     <label class="form-label" for="multicol-email">شماره ثبت</label>
                                     <div class="input-group input-group-merge">
                                   @*      <span class="input-group-text" id="multicol-email2" dir="ltr">بدون کاراکتر</span>*@
-                                        <input type="text" id="multicol-email" class="form-control text-start" dir="ltr" placeholder="123325/2112" aria-label="john.doe" aria-describedby="multicol-email2">
+                                        <input type="text" id="multicol-email" name="RegisterNumber" class="form-control text-start" dir="ltr" placeholder="123325/2112" aria-label="john.doe" aria-describedby="multicol-email2">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-password-toggle">
-                                        <label class="form-label" for="multicol-password">نام شرکت به انگلیسی</label>
+                                        <label class="form-label" for="multicol-password">شناسه ملی شرکت</label>
                                         <div class="input-group input-group-merge">
-                                            <input type="text" id="multicol-password" class="form-control text-start" dir="ltr" placeholder="PDN Co " aria-describedby="multicol-password2">
+                                            <input type="text" name="NationalCode" id="multicol-password" class="form-control text-start" dir="ltr" placeholder="12364545978" aria-describedby="multicol-password2">
                                             
                                         </div>
                                     </div>
@@ -86,7 +86,7 @@
                                     <div class="form-password-toggle">
                                         <label class="form-label" for="multicol-confirm-password">تاریخ تاسیس</label>
                                         <div class="input-group input-group-merge">
-                                            <input type="text" id="multicol-confirm-password" class="form-control text-start" dir="ltr" placeholder="1384/20/10" aria-describedby="multicol-confirm-password2">
+                                            <input type="text" name="CompanyRegisterDate" id="multicol-confirm-password" class="form-control text-start" dir="ltr" placeholder="1384/20/10" aria-describedby="multicol-confirm-password2">
                                             
                                         </div>
                                     </div>
@@ -97,28 +97,28 @@
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <label class="form-label" for="multicol-first-name">آدرس</label>
-                                    <input type="text" id="multicol-first-name" class="form-control" placeholder="تهران خیابان گاندی">
+                                    <input type="text" name="Address" id="multicol-first-name" class="form-control" placeholder="تهران خیابان گاندی">
                                 </div>
                                 <div class="col-md-6">
                                     <label class="form-label" for="multicol-last-name">تلفن شرکت</label>
-                                    <input type="text" id="multicol-last-name" class="form-control" placeholder="22222711">
+                                    <input type="text" name="Phone" id="multicol-last-name" class="form-control" placeholder="22222711">
                                 </div>    <div class="col-md-6">
                                     <label class="form-label" for="multicol-last-name">زمینه فعالیت</label>
-                                    <input type="text" id="multicol-last-name" class="form-control" placeholder="حوزه اقتصادی">
+                                    <input type="text" name="ActivityField" id="multicol-last-name" class="form-control" placeholder="حوزه اقتصادی">
                                 </div>
                               
                               
                                 <div class="col-md-6">
                                     <label class="form-label" for="multicol-birthdate">نوع شرکت</label>
-                                    <input type="text" id="multicol-birthdate" class="form-control dob-picker" placeholder="حقیقی یا حقوقی ؟">
+                                    <input type="text" name="CompanyType" id="multicol-birthdate" class="form-control dob-picker" placeholder="حقیقی یا حقوقی ؟">
                                 </div>
                                 <div class="col-md-6">
                                     <label class="form-label" for="multicol-phone">نام ریس هیئت مدیره</label>
-                                    <input type="text" id="multicol-phone" class="form-control phone-mask text-start" dir="ltr" placeholder="سعید کریمی" aria-label="658 799 8941">
+                                    <input type="text" name="ManagerName" id="multicol-phone" class="form-control" placeholder="سعید کریمی" />
                                 </div>
                             </div>
                             <div class="pt-4">
-                                <button type="submit" class="btn btn-primary me-sm-3 me-1">ثبت</button>
+                                <button asp-controller="Home" asp-action="Register" type="submit" class="btn btn-primary me-sm-3 me-1">ثبت</button>
                                 <button type="reset" class="btn btn-label-secondary">انصراف</button>
                             </div>
                         </form>

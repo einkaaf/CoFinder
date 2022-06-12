@@ -19,6 +19,13 @@ namespace CoFinder.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Register(Comapny_VM comapny_VM)
+        {
+            companyService.RegisterCompany(comapny_VM);
+            return RedirectToAction("Index");
+        }
+
         public IActionResult Index()
         {
             return View();
