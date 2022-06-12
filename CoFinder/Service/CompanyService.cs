@@ -39,6 +39,11 @@ namespace CoFinder.Service
                 return result;
             }
             else return null;
+        } 
+        
+        public List<Company> GetAllCompany()
+        {
+            return companyRepo.GetAllCompany();
         }
     }
 }

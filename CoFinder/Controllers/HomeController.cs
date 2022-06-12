@@ -28,13 +28,7 @@ namespace CoFinder.Controllers
 
         public IActionResult Index()
         {
-            return View();
-        }
-
-        [HttpPost]
-        public IActionResult Index(CompanySearch_VM companySearch_VM)
-        {
-            var result = companyService.GetCompany(companySearch_VM.NationalCode);
+            var result = companyService.GetAllCompany();
             return View(result);
         }
 

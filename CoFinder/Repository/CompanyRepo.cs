@@ -24,5 +24,10 @@ namespace CoFinder.Repository
         {
             return _dbContext.companies.FirstOrDefault(x => x.Id == companyId);
         }
+        
+        public List<Company> GetAllCompany()
+        {
+            return _dbContext.companies.ToList();
+        }
     }
 }
