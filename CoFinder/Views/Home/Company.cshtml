@@ -22,11 +22,11 @@
         maptype: 'dreamy',
         poi: true,
         traffic: false,
-        center: [@Model.location.y, @Model.location.x],
+        center: [@Model.location.x, @Model.location.y],
         zoom: 16
     });
 
-    L.marker([@Model.location.y, @Model.location.x]).addTo(myMap);
+    L.marker([@Model.location.x, @Model.location.y]).addTo(myMap);
 
 </script>
 </body>
