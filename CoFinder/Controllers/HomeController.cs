@@ -22,7 +22,7 @@ namespace CoFinder.Controllers
         }   
         public IActionResult Company()
         {
-            Task<NeshanResponse> result = neshanService.GetLatLongFromAddressAsync("تهران خیابان پاسداران گلستان پنجم");
+            Task<NeshanResponse> result = neshanService.GetLatLongFromAddressAsync("تهران گاندی بیست و یکم");
             return View(result.Result);
         }
 
