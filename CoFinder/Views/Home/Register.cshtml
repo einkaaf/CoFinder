@@ -64,20 +64,20 @@
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <label class="form-label" for="multicol-username">نام شرکت</label>
-                                    <input type="text" id="multicol-username" name="Name" class="form-control text-start" dir="ltr" placeholder="شرکت پایانه های داده ای نوین">
+                                    <input type="text" id="multicol-username" name="Name" class="form-control text-start" dir="ltr" placeholder="داده پردازی ایران">
                                 </div>
                                 <div class="col-md-6">
                                     <label class="form-label" for="multicol-email">شماره ثبت</label>
                                     <div class="input-group input-group-merge">
                                   @*      <span class="input-group-text" id="multicol-email2" dir="ltr">بدون کاراکتر</span>*@
-                                        <input type="text" id="multicol-email" name="RegisterNumber" class="form-control text-start" dir="ltr" placeholder="123325/2112" aria-label="john.doe" aria-describedby="multicol-email2">
+                                        <input type="text" id="multicol-email" name="RegisterNumber" class="form-control text-start" dir="ltr" placeholder="207172" aria-label="john.doe" aria-describedby="multicol-email2">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-password-toggle">
                                         <label class="form-label" for="multicol-password">شناسه ملی شرکت</label>
                                         <div class="input-group input-group-merge">
-                                            <input type="text" name="NationalCode" id="multicol-password" class="form-control text-start" dir="ltr" placeholder="12364545978" aria-describedby="multicol-password2">
+                                            <input type="text" name="NationalCode" maxlength="11" id="multicol-password" class="form-control text-start" dir="ltr" placeholder="10102487822" aria-describedby="multicol-password2" onkeypress=" return isNumber(event)" >
                                             
                                         </div>
                                     </div>
@@ -86,7 +86,7 @@
                                     <div class="form-password-toggle">
                                         <label class="form-label" for="multicol-confirm-password">تاریخ تاسیس</label>
                                         <div class="input-group input-group-merge">
-                                            <input type="text" name="CompanyRegisterDate" id="multicol-confirm-password" class="form-control text-start" dir="ltr" placeholder="1384/20/10" aria-describedby="multicol-confirm-password2">
+                                            <input type="text" name="CompanyRegisterDate" id="multicol-confirm-password" class="form-control text-start" dir="ltr" placeholder="1384/02/10" aria-describedby="multicol-confirm-password2">
                                             
                                         </div>
                                     </div>
@@ -97,20 +97,20 @@
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <label class="form-label" for="multicol-first-name">آدرس</label>
-                                    <input type="text" name="Address" id="multicol-first-name" class="form-control" placeholder="تهران خیابان گاندی">
+                                    <input type="text" name="Address" id="multicol-first-name" class="form-control" placeholder="تهران میدان ونک خیابان گاندی">
                                 </div>
                                 <div class="col-md-6">
                                     <label class="form-label" for="multicol-last-name">تلفن شرکت</label>
                                     <input type="text" name="Phone" id="multicol-last-name" class="form-control" placeholder="22222711">
                                 </div>    <div class="col-md-6">
                                     <label class="form-label" for="multicol-last-name">زمینه فعالیت</label>
-                                    <input type="text" name="ActivityField" id="multicol-last-name" class="form-control" placeholder="حوزه اقتصادی">
+                                    <input type="text" name="ActivityField" id="multicol-last-name" class="form-control" placeholder="نرم‌افزار، پتروشیمی، طراحی مهندسی و...">
                                 </div>
                               
                               
                                 <div class="col-md-6">
                                     <label class="form-label" for="multicol-birthdate">نوع شرکت</label>
-                                    <input type="text" name="CompanyType" id="multicol-birthdate" class="form-control dob-picker" placeholder="حقیقی یا حقوقی ؟">
+                                    <input type="text" name="CompanyType" id="multicol-birthdate" class="form-control dob-picker" placeholder="با مسئولیت محدود">
                                 </div>
                                 <div class="col-md-6">
                                     <label class="form-label" for="multicol-phone">نام ریس هیئت مدیره</label>
@@ -176,11 +176,14 @@
     <script src="../vendor/libs/flatpickr/l10n/fa-jdate.js"></script>
     <script src="../vendor/libs/select2/select2.js"></script>
     <script src="../vendor/libs/select2/i18n/fa.js"></script>
+    
 
     <!-- Main JS -->
     <script src="../js/main.js"></script>
+    <script src="../js/admin.js"></script>
 
     <!-- Page JS -->
     <script src="../js/form-layouts.js"></script>
 </body>
 </html> 
+
