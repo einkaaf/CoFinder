@@ -8,15 +8,22 @@ namespace CoFinder.Controllers
     public class HomeController : Controller
     {
         private readonly CompanyService companyService;
+        private readonly NeshanService neshanService;
 
-        public HomeController(CompanyService companyService)
+        public HomeController(CompanyService companyService, NeshanService neshanService)
         {
             this.companyService = companyService;
+            this.neshanService = neshanService;
         }
 
         public IActionResult Register()
         {
             return View();
+        }   
+        public IActionResult Company()
+        {
+            Task<NeshanResponse> result = neshanService.GetLatLongFromAddressAsync("تهران خیابان پاسداران گلستان پنجم");
+            return View(result.Result);
         }
 
         [HttpPost]

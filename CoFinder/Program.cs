@@ -7,9 +7,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 builder.Services.AddMvc();
 
+
 builder.Services.AddDbContext<AppDBContext>();
 builder.Services.AddScoped<CompanyRepo>();
 builder.Services.AddScoped<CompanyService>();
+builder.Services.AddScoped<NeshanService>();
 
 
 var app = builder.Build();
@@ -31,6 +33,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Register}/{id?}");
+    pattern: "{controller=Home}/{action=Company}/{id?}");
 
 app.Run();
