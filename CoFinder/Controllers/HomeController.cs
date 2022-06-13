@@ -35,7 +35,7 @@ namespace CoFinder.Controllers
 
         public IActionResult Index()
         {
-            var result = companyService.GetAllCompany();
+            var result = companyService.GetAllCompany();    
             return View(result);
         } 
 

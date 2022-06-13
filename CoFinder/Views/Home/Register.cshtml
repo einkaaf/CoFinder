@@ -77,19 +77,18 @@
                                     <div class="form-password-toggle">
                                         <label class="form-label" for="multicol-password">شناسه ملی شرکت</label>
                                         <div class="input-group input-group-merge">
-                                            <input type="text" name="NationalCode" maxlength="11" id="multicol-password" class="form-control text-start" dir="ltr" placeholder="10102487822" aria-describedby="multicol-password2" onkeypress=" return isNumber(event)">
+                                            <input type="text" name="NationalCode" maxlength="11" id="multicol-password" required class="form-control text-start" dir="ltr" placeholder="10102487822" aria-describedby="multicol-password2" onkeypress=" return isNumber(event)">
 
                                         </div>
                                     </div>
                                 </div>
-                                                                
+
                                 <div class="col-md-6">
                                     <div class="form-password-toggle">
                                         <label class="form-label" for="multicol-confirm-password">تاریخ تاسیس</label>
-                                        <div class="input-group input-group-merge">
-                                            <input type="text" name="CompanyRegisterDate" id="multicol-confirm-password" class="form-control text-start" dir="ltr" placeholder="1384/02/10" aria-describedby="multicol-confirm-password2">
+                                        <input type="hidden" name="CompanyRegisterDate" class="form-control flatpickr-input" placeholder="1380/05/26" id="flatpickr-date">
 
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -111,13 +110,13 @@
 
                                 <div class="col-md-6">
                                     <label class="form-label" for="multicol-last-name">نوع شرکت</label>
-                                    <select id="smallSelect" class="form-select form-label form-control dob-picker form-select">
+                                    <select id="smallSelect" name="CompanyType" class="form-select form-label form-control dob-picker form-select">
                                         @*<option>نوع شرکت</option>*@
-                                        <option value="1">انتخاب کنید</option>
-                                        <option value="2">بامسئولیت محدود</option>
-                                        <option value="3">سهامی خاص</option>
-                                        <option value="4">سهامی عام</option>
-                                        <option value="4">تعاونی</option>
+                                        <option value="0">انتخاب کنید</option>
+                                        <option value="بامسئولیت محدود">بامسئولیت محدود</option>
+                                        <option value="سهامی خاص">سهامی خاص</option>
+                                        <option value="سهامی عام">سهامی عام</option>
+                                        <option value="تعاونی">تعاونی</option>
                                     </select>
                                     @*<label class="form-label" for="multicol-birthdate">نوع شرکت</label>*@
                                     @*<input type="text" name="CompanyType" id="multicol-birthdate" class="form-control dob-picker" placeholder="با مسئولیت محدود">*@
@@ -194,7 +193,8 @@
 
     <!-- Page JS -->
     <script src="../js/form-layouts.js"></script>
-  
+    <script src="../js/forms-pickers.js"></script>
+
 </body>
 </html>
 
