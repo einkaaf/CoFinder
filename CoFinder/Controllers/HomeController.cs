@@ -16,14 +16,21 @@ namespace CoFinder.Controllers
             this.neshanService = neshanService;
         }
 
+        [HttpGet]
+        public IActionResult Company([FromQuery] string nationalCode)
+        {
+            CompanySearchResult_VM result = companyService.SearchCompany(nationalCode);
+
+            if (string.IsNullOrWhiteSpace(nationalCode) || null == result)
+            {
+                return RedirectToAction("Index");
+            }
+            return View(result);
+        }
+
         public IActionResult Register()
         {
             return View();
-        }   
-        public IActionResult Company()
-        {
-            Task<NeshanResponse> result = neshanService.GetLatLongFromAddressAsync("تهران گاندی بیست و یکم");
-            return View(result.Result);
         }
 
         [HttpPost]
@@ -35,9 +42,9 @@ namespace CoFinder.Controllers
 
         public IActionResult Index()
         {
-            var result = companyService.GetAllCompany();    
+            var result = companyService.GetAllCompany();
             return View(result);
-        } 
+        }
 
         [HttpGet]
         public IActionResult Index([FromQuery] string nationalCode)

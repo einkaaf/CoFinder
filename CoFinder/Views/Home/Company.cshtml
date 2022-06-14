@@ -1,7 +1,7 @@
 ﻿@{
     Layout = null;
 }
-@model CoFinder.Models.NeshanResponse;
+@model CoFinder.Models.CompanySearchResult_VM;
 @*<!DOCTYPE html>
     <html lang="en">
     <head>
@@ -127,11 +127,11 @@
                                     <span class="app-brand-text h3 mb-0 fw-bold">خلاصه اطلاعات شرکت</span>
                                 </div>
                                 <td class="pe-3">نام شرکت:</td>
-                                <td>پایانه‌های داده‌ای نوین</td>
+                                <td>@Model.Company.Name</td>
                             </div>
                             <div class="mb-2 lh-1-85">
                                 <span class="me-1">موضوع شرکت:</span>
-                                <span class="fw-semibold">موضوع<span>
+                                <span class="fw-semibold">@Model.Company.CompanyTitle<span>
                             </div>
                             <div>
                             </div>
@@ -145,15 +145,15 @@
                                 <table class="lh-2">
                                     <tr>
                                         <td class="pe-3">آدرس :</td>
-                                        <td>تبریز، آبرسان، برج بلور، طبقه 85</td>
+                                        <td>@Model.Company.Address</td>
                                     </tr>
                                     <tr>
                                         <td class="pe-3">تلفن :</td>
-                                        <td>02122222711</td>
+                                        <td>@Model.Company.Phone</td>
                                     </tr>
                                     <tr>
                                         <td class="pe-3">ایمیل :</td>
-                                        <td>john@example.com</td>
+                                        <td>@Model.Company.CompanyEmail</td>
                                     </tr>
                                 </table>
                             </div>
@@ -163,23 +163,23 @@
                                     <tbody>
                                         <tr>
                                             <td class="pe-3">شناسه ملی:</td>
-                                            <td>12,000,000 تومان</td>
+                                            <td>@Model.Company.NationalCode</td>
                                         </tr>
                                         <tr>
                                             <td class="pe-3">شماره ثبت:</td>
-                                            <td>بانک آمریکا</td>
+                                            <td>@Model.Company.RegisterNumber</td>
                                         </tr>
                                         <tr>
                                             <td class="pe-3">تاریخ تاسیس:</td>
-                                            <td>1401/01/29</td>
+                                            <td>@Model.Company.CompanyRegisterDate</td>
                                         </tr>
                                         <tr>
                                             <td class="pe-3">نوع شرکت:</td>
-                                            <td>سهامی خاص</td>
+                                            <td>@Model.Company.CompanyType</td>
                                         </tr>
                                         <tr>
                                             <td class="pe-3">زمینه فعالیت:</td>
-                                            <td>نرم‌افزار</td>
+                                            <td>@Model.Company.ActivityField</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -196,11 +196,11 @@
                                 maptype: 'dreamy',
                                 poi: true,
                                 traffic: false,
-                                center: [@Model.location.y, @Model.location.x],
+                                center: [@Model.NeshanResponse.location.y, @Model.NeshanResponse.location.x],
                                 zoom: 16
                             });
 
-                            L.marker([@Model.location.y, @Model.location.x]).addTo(myMap);
+                            L.marker([@Model.NeshanResponse.location.y, @Model.NeshanResponse.location.x]).addTo(myMap);
 
                         </script>
                     </div>

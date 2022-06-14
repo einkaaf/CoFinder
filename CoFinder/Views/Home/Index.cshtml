@@ -66,7 +66,7 @@
                 <div class="card">
                     <h5 class="card-header">لیست شرکت های یافت شده</h5>
                     <div class="table-responsive text-nowrap">
-                        <table class="table table-striped">
+                        <table class="table table-striped table-hover ">
                             <thead>
                                 <tr>
                                     <th>نام شرکت</th>
@@ -76,11 +76,11 @@
                                     <th>نوع شرکت</th>
                                 </tr>
                             </thead>
-                            <tbody class="table-border-bottom-0">
+                            <tbody class=" table-border-bottom-0">
                                 @foreach (var item in Model)
                                 {
-                                    <tr>
-                                        <td><i class="align-middle fab fa-perbyte fa-lg text-danger me-3"></i> <strong>@item.Name</strong></td>
+                                    <tr class="table-hover" style="cursor: pointer;" onclick="window.location.href = '/home/company?nationalCode=@item.NationalCode';">
+                                        <td><i class="align-middle fab fa-pied-piper fa-lg text-danger me-3 table-hover"></i> <strong>@item.Name</strong></td>
                                         <td>@item.NationalCode</td>
                                         <td>@item.Phone</td>
                                         <td><span class="badge bg-label-primary me-1">@item.ActivityField</span></td>

@@ -11,5 +11,7 @@
         public string ActivityField { get; set; }
         public string ManagerName { get; set; }
         public string CompanyType { get; set; }
+        public string CompanyTitle { get; set; }
+        public string CompanyEmail { get; set; }
     }
 }
