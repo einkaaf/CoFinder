@@ -75,7 +75,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-password-toggle">
-                                        <label class="form-label" for="multicol-password">شناسه ملی شرکت</label>
+                                        <label class="form-label" for="multicol-password">شناسه ملی</label>
                                         <div class="input-group input-group-merge">
                                             <input type="text" name="NationalCode" maxlength="11" id="multicol-password" required="" class="form-control text-start" dir="ltr" placeholder="10102487822" aria-describedby="multicol-password2" onkeypress=" return isNumber(event)">
                                         </div>
@@ -121,7 +121,15 @@
                                     <label class="form-label" for="multicol-phone">نام مدیرعامل</label>
                                     <input type="text" name="ManagerName" id="multicol-phone" class="form-control" placeholder="سعید کریمی" />
                                 </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="multicol-phone">ایمیل شرکت</label>
+                                    <input type="text" name="ManagerName" id="multicol-phone" class="form-control" placeholder="john@example.com" />
+                                </div>
                             </div>
+                            <div>
+                        <label for="exampleFormControlTextarea1" class="form-label">موضوع شرکت</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
                             <div class="pt-4">
                                 <button asp-controller="Home" asp-action="Register" type="submit" class="btn btn-primary me-sm-3 me-1">ثبت</button>
                                 <button type="reset" class="btn btn-label-secondary">بازنشانی</button>
