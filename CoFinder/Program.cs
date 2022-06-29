@@ -1,5 +1,6 @@
 using CoFinder.Repository;
 using CoFinder.Service;
+using CoFinder.Zibal;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,7 @@ builder.Services.AddDbContext<AppDBContext>();
 builder.Services.AddScoped<CompanyRepo>();
 builder.Services.AddScoped<CompanyService>();
 builder.Services.AddScoped<NeshanService>();
+builder.Services.AddScoped<ZibalService>();
 
 
 var app = builder.Build();
