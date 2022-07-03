@@ -13,7 +13,7 @@
     <meta name="description" content="">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../img/favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../img/favicon/logo.ico">
 
     <!-- Icons -->
     <link rel="stylesheet" href="../vendor/fonts/boxicons.css">
@@ -63,11 +63,17 @@
                             <h6 class="fw-normal">1. اطلاعات پایه</h6>
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <label class="form-label" for="multicol-username">نام شرکت</label>
+                                    <label class="form-label" for="multicol-username">
+                                        <span id="cphMain_Label5" class="cReq">* </span>
+                                        نام شرکت
+                                    </label>
                                     <input required="" type="text" id="multicol-username" name="Name" class="form-control text-start" dir="ltr" placeholder="داده پردازی ایران">
                                 </div>
                                 <div class="col-md-6">
-                                    <label class="form-label" for="multicol-email">شماره ثبت</label>
+                                    <label class="form-label" for="multicol-email">
+                                        <span id="cphMain_Label5" class="cReq">* </span>
+                                        شماره ثبت
+                                    </label>
                                     <div class="input-group input-group-merge">
                                         @*      <span class="input-group-text" id="multicol-email2" dir="ltr">بدون کاراکتر</span>*@
                                         <input required="" type="text" id="multicol-email" name="RegisterNumber" class="form-control text-start" dir="ltr" placeholder="236548" aria-label="john.doe" aria-describedby="multicol-email2" onkeypress=" return isNumber(event)">
@@ -84,12 +90,10 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="col-md-6">
                                     <div class="form-password-toggle">
                                         <label class="form-label" for="multicol-confirm-password">تاریخ تاسیس</label>
                                         <input type="hidden" name="CompanyRegisterDate" class="form-control flatpickr-input" placeholder="1380/05/26" id="flatpickr-date">
-
                                     </div>
                                 </div>
                             </div>
@@ -97,20 +101,32 @@
                             <h6 class="fw-normal">2. اطلاعات تکمیلی</h6>
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <label class="form-label" for="multicol-first-name">آدرس</label>
-                                    <input required="" type="text" name="Address" id="multicol-first-name" class="form-control" placeholder="تهران میدان هفت‌تیر خیابان انصاری پلاک 20واحد یک">
+                                    <label class="form-label" for="multicol-first-name">
+                                        <span id="cphMain_Label5" class="cReq">* </span>
+                                        آدرس
+                                    </label>
+                                    <input required="" type="text" name="Address" id="multicol-first-name" class="form-control" placeholder="تهران میدان هفت‌تیر خیابان انصاری پلاک 20 واحد یک">
                                 </div>
                                 <div class="col-md-6">
-                                    <label class="form-label" for="multicol-last-name">تلفن شرکت</label>
+                                    <label class="form-label" for="multicol-last-name">
+                                        <span id="cphMain_Label5" class="cReq">* </span>
+                                        تلفن شرکت
+                                    </label>
                                     <input required="" type="text" name="Phone" maxlength="11" id="multicol-last-name" class="form-control" placeholder="02133658479" onkeypress=" return isNumber(event)">
                                 </div>    <div class="col-md-6">
-                                    <label class="form-label" for="multicol-last-name">زمینه فعالیت</label>
+                                    <label class="form-label" for="multicol-last-name">
+                                        <span id="cphMain_Label5" class="cReq">* </span>
+                                        زمینه فعالیت
+                                    </label>
                                     <input required="" type="text" name="ActivityField" id="multicol-last-name" class="form-control" placeholder="نرم‌افزار، پتروشیمی، طراحی مهندسی و...">
                                 </div>
 
 
                                 <div class="col-md-6">
-                                    <label class="form-label" for="multicol-last-name">نوع شرکت</label>
+                                    <label class="form-label" for="multicol-last-name">
+                                        <span id="cphMain_Label5" class="cReq">* </span>
+                                        نوع شرکت
+                                    </label>
                                     <select id="smallSelect" name="CompanyType" class="form-select form-label form-control dob-picker form-select">
                                         @*<option>نوع شرکت</option>*@
                                         <option value="0">انتخاب کنید</option>
@@ -121,42 +137,36 @@
                                     </select>
                                 </div>
                                 <div class="col-md-6">
-                                    <label class="form-label" for="multicol-phone">نام مدیرعامل</label>
+                                    <label class="form-label" for="multicol-phone">
+                                        <span id="cphMain_Label5" class="cReq">* </span>
+                                        نام مدیرعامل
+                                    </label>
                                     <input required="" type="text" name="ManagerName" id="multicol-phone" class="form-control" placeholder="محمد اکبری" />
                                 </div>
                                 <div class="col-md-6">
-                                    <label class="form-label" for="multicol-phone">ایمیل شرکت</label>
+                                    <label class="form-label" for="multicol-phone">
+                                        <span id="cphMain_Label5" class="cReq">* </span>
+                                        ایمیل شرکت
+                                    </label>
                                     <input required="" type="email" name="CompanyEmail" id="multicol-phone" class="form-control" placeholder="john@example.com" />
                                 </div>
                             </div>
                             <div>
-                                <label for="exampleFormControlTextarea1" class="form-label">موضوع شرکت</label>
+                                <label for="exampleFormControlTextarea1" class="form-label">
+                                    <span id="cphMain_Label5" class="cReq">* </span>
+                                    موضوع شرکت
+                                </label>
                                 <textarea class="form-control" name="CompanyTitle" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
                             <div class="pt-4">
                                 <button asp-controller="Home" asp-action="Register" type="submit" class="btn btn-primary me-sm-3 me-1">ثبت</button>
                                 <button type="reset" class="btn btn-label-secondary">بازنشانی</button>
-                                <a href="/home/index" class="btn btn-label-secondary">شرکت‌های ثبت شده</a>
+                                <a href="/home/index" class="btn btn-label-secondary" style="margin-right: 18px;">شرکت‌های ثبت شده</a>
                             </div>
                         </form>
                     </div>
 
                 </div>
-
-                <!-- / Content -->
-                @*         <!-- Footer -->
-                <footer class="content-footer footer bg-footer-theme">
-                <div class="pt-xxl-5 ">
-                <div>
-                طراحی شده با ❤️  توسط
-                <a href="https://rtl-theme.com" target="_blank" class="footer-link fw-semibold">سعید کریمی و مرجان عظیمی</a>
-                </div>
-
-                </div>
-                </footer>
-                <!-- / Footer -->*@
-
-
             </div>
             <!-- Content wrapper -->
         </div>

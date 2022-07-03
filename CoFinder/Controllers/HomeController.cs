@@ -65,7 +65,7 @@ namespace CoFinder.Controllers
             }
             else
             {
-                var result = companyService.GetAllCompany().Where(x=>x.NationalCode.Equals(nationalCode)).ToList();
+                var result = companyService.GetAllCompany().Where(x=>x.NationalCode.Contains(nationalCode)).ToList();
                 return View(result);
             }
           
