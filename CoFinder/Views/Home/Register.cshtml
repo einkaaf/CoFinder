@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
-    <title>طرح‌های عمودی - فرم‌ها | فرست - قالب مدیریت بوت‌استرپ</title>
+    <title>ثبت شرکت جدید</title>
 
     <meta name="description" content="">
 
@@ -64,20 +64,22 @@
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <label class="form-label" for="multicol-username">نام شرکت</label>
-                                    <input type="text" id="multicol-username" name="Name" class="form-control text-start" dir="ltr" placeholder="داده پردازی ایران">
+                                    <input required="" type="text" id="multicol-username" name="Name" class="form-control text-start" dir="ltr" placeholder="داده پردازی ایران">
                                 </div>
                                 <div class="col-md-6">
                                     <label class="form-label" for="multicol-email">شماره ثبت</label>
                                     <div class="input-group input-group-merge">
                                         @*      <span class="input-group-text" id="multicol-email2" dir="ltr">بدون کاراکتر</span>*@
-                                        <input type="text" id="multicol-email" name="RegisterNumber" class="form-control text-start" dir="ltr" placeholder="236548" aria-label="john.doe" aria-describedby="multicol-email2" onkeypress=" return isNumber(event)">
+                                        <input required="" type="text" id="multicol-email" name="RegisterNumber" class="form-control text-start" dir="ltr" placeholder="236548" aria-label="john.doe" aria-describedby="multicol-email2" onkeypress=" return isNumber(event)">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-password-toggle">
-                                        <label class="form-label" for="multicol-password">شناسه ملی</label>
+                                        <label class="form-label" for="multicol-password">شناسه ملی
+                                            <span id="cphMain_Label5" class="cReq">* </span>
+                                        </label>
                                         <div class="input-group input-group-merge">
-                                            <input type="text" name="NationalCode" maxlength="11" id="multicol-password" required="" class="form-control text-start" dir="ltr" placeholder="10102654789" aria-describedby="multicol-password2" onkeypress=" return isNumber(event)">
+                                            <input  required="" type="text" name="NationalCode" maxlength="11" id="multicol-password" class="form-control text-start" dir="ltr" placeholder="10102654789" aria-describedby="multicol-password2" onkeypress=" return isNumber(event)">
                                         </div>
                                     </div>
                                 </div>
@@ -95,14 +97,14 @@
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <label class="form-label" for="multicol-first-name">آدرس</label>
-                                    <input type="text" name="Address" id="multicol-first-name" class="form-control" placeholder="تهران میدان هفت‌تیر">
+                                    <input required="" type="text" name="Address" id="multicol-first-name" class="form-control" placeholder="تهران میدان هفت‌تیر">
                                 </div>
                                 <div class="col-md-6">
                                     <label class="form-label" for="multicol-last-name">تلفن شرکت</label>
-                                    <input type="text" name="Phone" maxlength="11" id="multicol-last-name" class="form-control" placeholder="02133658479" onkeypress=" return isNumber(event)">
+                                    <input required="" type="text" name="Phone" maxlength="11" id="multicol-last-name" class="form-control" placeholder="02133658479" onkeypress=" return isNumber(event)">
                                 </div>    <div class="col-md-6">
                                     <label class="form-label" for="multicol-last-name">زمینه فعالیت</label>
-                                    <input type="text" name="ActivityField" id="multicol-last-name" class="form-control" placeholder="نرم‌افزار، پتروشیمی، طراحی مهندسی و...">
+                                    <input required="" type="text" name="ActivityField" id="multicol-last-name" class="form-control" placeholder="نرم‌افزار، پتروشیمی، طراحی مهندسی و...">
                                 </div>
 
 
@@ -119,11 +121,11 @@
                                 </div>
                                 <div class="col-md-6">
                                     <label class="form-label" for="multicol-phone">نام مدیرعامل</label>
-                                    <input type="text" name="ManagerName" id="multicol-phone" class="form-control" placeholder="محمد اکبری" />
+                                    <input required="" type="text" name="ManagerName" id="multicol-phone" class="form-control" placeholder="محمد اکبری" />
                                 </div>
                                 <div class="col-md-6">
                                     <label class="form-label" for="multicol-phone">ایمیل شرکت</label>
-                                    <input type="text" name="CompanyEmail" id="multicol-phone" class="form-control" placeholder="john@example.com" />
+                                    <input required="" type="email" name="CompanyEmail" id="multicol-phone" class="form-control" placeholder="john@example.com" />
                                 </div>
                             </div>
                             <div>
@@ -133,7 +135,7 @@
                             <div class="pt-4">
                                 <button asp-controller="Home" asp-action="Register" type="submit" class="btn btn-primary me-sm-3 me-1">ثبت</button>
                                 <button type="reset" class="btn btn-label-secondary">بازنشانی</button>
-                                <a href="/home/index" class="btn btn-label-secondary">اطلاعات شرکت‌ها</a>
+                                <a href="/home/index" class="btn btn-label-secondary">شرکت‌های ثبت شده</a>
                             </div>
                         </form>
                     </div>
